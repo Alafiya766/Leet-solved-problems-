@@ -1,0 +1,12 @@
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        int temp=-1;
+        for(int i=0;i<sentences.length;i++){
+            String arr[] = sentences[i].split(" ");
+            if(arr.length>temp)
+                temp=arr.length;
+        }
+        return temp;
+    }
+}
+      
